@@ -1,0 +1,177 @@
+<!--  <nav class="navbar bg-body-secondary">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand ms-2 mt-1 mb-2" href="https://www.streamssolutions.com/" target="_blank">
+      <img src="/static/assets/images/streamlogo1.png" alt="Logo" width="90px" height="40px"
+        class="d-inline-block align-text-top">
+    </a>
+
+    <div class="d-flex align-items-center">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <img src="/static/assets/images/logouser.png" alt="Person icon" width="25px" height="25px"
+            class="d-inline-block align-text-top me-2">
+          Username
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Vendor
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Add Vendor</a></li>
+            <li><a class="dropdown-item" href="#">List of Vendors</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav 
+
+
+<nav class="navbar bg-body-secondary">
+  <div class="container-fluid">
+  
+  <a class="navbar-brand ms-2 mt-1 mb-2" href="https://www.streamssolutions.com/" target="_blank">
+  <img src="/static/assets/images/streamlogo1.png" alt="Logo" width="90px" height="40px" class="d-inline-block align-text-top">
+  </a>
+  <button class="btn btn-primary" id="sidebar-toggle"><i class="fa fa-bars"></i></button>
+  </div>
+  </nav>
+  
+  <div class="sidebar">
+  <ul class="nav flex-column">
+  <li class="nav-item">
+  <a class="nav-link" href="#"><i class="fa fa-user-circle me-2"></i>Dashboard</a>
+  </li>
+  <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="vendor-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <i class="fa fa-users me-2"></i>Vendor
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="vendor-dropdown">
+  <li><a class="dropdown-item" href="#">Add Vendor</a></li>
+  <li><a class="dropdown-item" href="#">List of Vendors</a></li>
+  </ul>
+  </li>
+  </ul>
+  </div> 
+-->
+
+
+
+
+
+
+
+  <style>
+    /* Set a fixed height for the navbar */
+    .navbar {
+      height: 70px;
+    }
+
+    /* Set a fixed width for the sidebar */
+    .sidebar {
+      position: fixed;
+      top: 70px;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      background-color: #f5f5f5;
+      padding-top: 20px;
+    }
+
+    /* Set a left margin for the page content to match the width of the sidebar */
+  
+
+    
+    /* @media (max-width: 768px) {
+      .sidebar {
+       
+        display: none;
+      }
+      .main-content {
+        width:100%;
+      }
+
+    }
+    @media (min-width: 769px) {
+      .sidebar {
+       
+        display: block;
+      }
+      .main-content {
+        width:calc(100%-250px);
+        margin-left: 250px;
+      }
+
+    } */
+  </style>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand ms-2 mt-1 mb-2" href="https://www.streamssolutions.com/" target="_blank">
+        <img src="/static/assets/images/streamlogo1.png" alt="Logo" width="90px" height="40px"
+          class="d-inline-block align-text-top">
+      </a>
+      <button type="button" id="sidebarCollapse" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+        <span>Toggle Sidebar</span>
+      </button>
+
+    </div>
+  </nav>
+  <div class="wrapper">
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar-header d-none d-md-block d-sm-block">
+        <h5>Mihir</h5>
+      </div>
+      <ul class="list-unstyled components">
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#vendorSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Vendor</a>
+          <ul class="collapse list-unstyled" id="vendorSubmenu">
+            <li>
+              <a href="#">Add Vendor</a>
+            </li>
+            <li>
+              <a href="#">List of Vendors</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- <div id="content" class="main">
+      <h1>Page Content</h1>
+      <p>This is where your page content goes.</p>
+    </div> -->
+  </div>
+
+
+
+  <script>
+    $(document).ready(function () {
+      console.log("Dcfvcvfc");
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+      });
+    });
+  </script
