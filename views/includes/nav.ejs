@@ -1,177 +1,191 @@
-<!--  <nav class="navbar bg-body-secondary">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-warning">
   <div class="container-fluid">
-    
-    <a class="navbar-brand ms-2 mt-1 mb-2" href="https://www.streamssolutions.com/" target="_blank">
-      <img src="/static/assets/images/streamlogo1.png" alt="Logo" width="90px" height="40px"
-        class="d-inline-block align-text-top">
+    <a class="navbar-brand ms-4 mt-2 mb-2" href="https://www.streamssolutions.com/"><img src="/static/assets/images/streamlogo1.png"height="35px"width="90px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="ms-auto me-3" href="#">
+      <img src="/static/assets/images/logoutIcon.png" alt="Logout" height="30px" width="35px">
     </a>
+    </div>
+    </nav>
 
-    <div class="d-flex align-items-center">
-      <div class="dropdown">
-        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          <img src="/static/assets/images/logouser.png" alt="Person icon" width="25px" height="25px"
-            class="d-inline-block align-text-top me-2">
-          Username
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="#">Profile</a></li>
-          <li><a class="dropdown-item" href="#">Settings</a></li>
-          <li><a class="dropdown-item" href="#">Logout</a></li>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Sidebar</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <li><a href="#">Dashboard</a></li>
+          <li>
+            <a href="#vendorSubMenu" data-bs-toggle="collapse">Vendor</a>
+            <ul class="collapse list-unstyled" id="vendorSubMenu">
+              <li><a href="#">Add Vendor</a></li>
+              <li><a href="#">List of Vendors</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
-
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Dashboard</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Vendor
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Add Vendor</a></li>
-            <li><a class="dropdown-item" href="#">List of Vendors</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav 
-
-
-<nav class="navbar bg-body-secondary">
-  <div class="container-fluid">
   
-  <a class="navbar-brand ms-2 mt-1 mb-2" href="https://www.streamssolutions.com/" target="_blank">
-  <img src="/static/assets/images/streamlogo1.png" alt="Logo" width="90px" height="40px" class="d-inline-block align-text-top">
-  </a>
-  <button class="btn btn-primary" id="sidebar-toggle"><i class="fa fa-bars"></i></button>
-  </div>
-  </nav>
-  
-  <div class="sidebar">
-  <ul class="nav flex-column">
-  <li class="nav-item">
-  <a class="nav-link" href="#"><i class="fa fa-user-circle me-2"></i>Dashboard</a>
-  </li>
-  <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="vendor-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-  <i class="fa fa-users me-2"></i>Vendor
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="vendor-dropdown">
-  <li><a class="dropdown-item" href="#">Add Vendor</a></li>
-  <li><a class="dropdown-item" href="#">List of Vendors</a></li>
-  </ul>
-  </li>
-  </ul>
-  </div> 
--->
-
-
-
-
-
-
-
-  <style>
-    /* Set a fixed height for the navbar */
-    .navbar {
-      height: 70px;
-    }
-
-    /* Set a fixed width for the sidebar */
-    .sidebar {
-      position: fixed;
-      top: 70px;
-      bottom: 0;
-      left: 0;
-      width: 200px;
-      background-color: #f5f5f5;
-      padding-top: 20px;
-    }
-
-    /* Set a left margin for the page content to match the width of the sidebar */
-  
-
     
-    /* @media (max-width: 768px) {
-      .sidebar {
-       
-        display: none;
-      }
-      .main-content {
-        width:100%;
-      }
+   -->
 
-    }
-    @media (min-width: 769px) {
-      .sidebar {
-       
-        display: block;
-      }
-      .main-content {
-        width:calc(100%-250px);
-        margin-left: 250px;
-      }
-
-    } */
-  </style>
-
-
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container-fluid">
+      <a class="navbar-brand ms-4 mt-2 mb-2" href="https://www.streamssolutions.com/"><img src="/static/assets/images/streamlogo1.png"height="35px"width="90px"></a>
       
-      <a class="navbar-brand ms-2 mt-1 mb-2" href="https://www.streamssolutions.com/" target="_blank">
-        <img src="/static/assets/images/streamlogo1.png" alt="Logo" width="90px" height="40px"
-          class="d-inline-block align-text-top">
+      <a class="ms-auto me-3" href="#">
+        <img src="/static/assets/images/logoutIcon.png" alt="Logout" height="30px" width="35px">
       </a>
-      <button type="button" id="sidebarCollapse" class="btn btn-info">
-        <i class="fas fa-align-left"></i>
-        <span>Toggle Sidebar</span>
-      </button>
-
-    </div>
-  </nav>
-  <div class="wrapper">
-    <nav id="sidebar" class="sidebar">
-      <div class="sidebar-header d-none d-md-block d-sm-block">
-        <h5>Mihir</h5>
       </div>
-      <ul class="list-unstyled components">
-        <li>
-          <a href="#">Dashboard</a>
-        </li>
-        <li>
-          <a href="#vendorSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Vendor</a>
-          <ul class="collapse list-unstyled" id="vendorSubmenu">
-            <li>
-              <a href="#">Add Vendor</a>
-            </li>
-            <li>
-              <a href="#">List of Vendors</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <!-- <div id="content" class="main">
-      <h1>Page Content</h1>
-      <p>This is where your page content goes.</p>
-    </div> -->
+      </nav> -->
+
+<div class="sidebar">
+  <div class="logo-details">
+    <i class="bx bxl-c-plus-plus"></i>
+    <span class="logo_name">Streams</span>
   </div>
+  <ul class="nav-links">
+    <li>
+      <a href="#">
+        <i class="bx bx-grid-alt"></i>
+        <span class="link_name">Dashboard</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Category</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="iocn-link">
+        <a href="#">
+          <i class="bx bx-collection"></i>
+          <span class="link_name">Vendor</span>
+        </a>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Vendor</a></li>
+        <li><a href="#">Add Vendor</a></li>
+        <li><a href="#">List of Vendors</a></li>
+      </ul>
+    </li>
+  </ul>
+  </div>
+  
 
+  <!-- 
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Posts</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Login Form</a></li>
+          <li><a href="#">Card Design</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Analytics</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Analytics</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chart</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug' ></i>
+            <span class="link_name">Plugins</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+       
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Prem Shahi</div>
+        <div class="job">Web Desginer</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>  -->
 
-
+  <section class="home-section">
+    <div class="home-content">
+      <i class="bx bx-menu"></i>
+      <span class="text"></span>
+    </div>
+  </section>
+  
   <script>
-    $(document).ready(function () {
-      console.log("Dcfvcvfc");
-      $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e) => {
+        let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+        arrowParent.classList.toggle("showMenu");
       });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
     });
-  </script
+  </script>
+</div>
