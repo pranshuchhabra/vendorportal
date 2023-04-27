@@ -1,67 +1,75 @@
+<div class="container-scroller">
+  <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+      <a class="navbar-brand brand-logo" href="https://www.streamssolutions.com"><img src="/static/assets/images/streamlogo1.png" alt="logo" /></a>
+      <a class="navbar-brand brand-logo-mini" href="https://www.streamssolutions.com"><img src="/static/assets/images/miniLogo.jpg" alt="logo" /></a>
+    </div>
+    <div class="navbar-menu-wrapper d-flex align-items-stretch">
+      <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+        <span class="mdi mdi-menu"></span>
+      </button>
 
- 
- <!-- <div class="container-fluid">
-  <div class="container col-lg-12">
-
-    <div class="sidebar">
-      <div class="logo-details">
-        <i class="bx bxl-c-plus-plus"></i>
-        <span class="logo_name">Streams</span>
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#">
-            <i class="bx bx-grid-alt"></i>
-            <span class="link_name">Dashboard</span>
+      <ul class="navbar-nav navbar-nav-right">
+        <li class="nav-item nav-logout d-none d-lg-block">
+          <a class="nav-link" href="#">
+            <i class="mdi mdi-power"></i>
           </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Category</a></li>
-          </ul>
-        </li>
-        <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class="bx bx-collection"></i>
-              <span class="link_name">Vendor</span>
-            </a>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Vendor</a></li>
-            <li><a href="#">Add Vendor</a></li>
-            <li><a href="#">List of Vendors</a></li>
-          </ul>
         </li>
       </ul>
+      <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+        <span class="mdi mdi-menu"></span>
+      </button>
     </div>
+  </nav>
+
+
+  <div class="container-fluid page-body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <ul class="nav">
+        <li class="nav-item nav-profile">
+          <a href="#" class="nav-link">
+            <div class="nav-profile-image">
+              <img src="/static/assets/images/logouser.png" alt="profile">
+              <span class="login-status online"></span>
+              <!--change to offline or busy as needed-->
+            </div>
+            <div class="nav-profile-text d-flex flex-column">
+              <span class="font-weight-bold mb-2">Mihir</span>
+              <!-- <span class="text-secondary text-small">Project Manager</span> -->
+            </div>
+            <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="menu-title">Dashboard</span>
+            <i class="mdi mdi-home menu-icon"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="" aria-expanded="false" aria-controls="ui-basic">
+            <span class="menu-title">Vendors</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+          </a>
+          <div class="collapse" id="ui-basic">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="">Add Vendor</a></li>
+              <li class="nav-item"> <a class="nav-link" href="">List of Vendors</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="footer">
+      <div class="container-fluid clearfix">
+        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © streamssolutions.com 2020</span>
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Connect<a href="https://www.streamssolutions.com" target="_blank">here</a>for more</span>
+      </div>
+    </footer>
+
+
   </div>
 </div>
-
-
-
-<section class="home-section">
-
-  <div class="home-content">
-    <i class="bx bx-menu"></i>
-    <span class="text"></span>
-  </div>
-</section>
-
-
-
-
-<script>
-  let arrow = document.querySelectorAll(".arrow");
-  for (var i = 0; i < arrow.length; i++) {
-    arrow[i].addEventListener("click", (e) => {
-      let arrowParent = e.target.parentElement.parentElement;
-      arrowParent.classList.toggle("showMenu");
-    });
-  }
-  let sidebar = document.querySelector(".sidebar");
-  let sidebarBtn = document.querySelector(".bx-menu");
-  console.log(sidebarBtn);
-  sidebarBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("close");
-  });
-</script> -->
